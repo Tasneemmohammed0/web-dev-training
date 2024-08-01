@@ -33,6 +33,7 @@ footer {
   background-color: black;
   color: white;
   text-align: center;
+  margin-top: 10px;
 }
 
 .nav-links {
@@ -57,4 +58,23 @@ footer {
 
 .project {
   place-self: center;
+}
+
+.contact h2 {
+  margin: 0;
+  display: inline-block;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.contact-images-container img {
+  width: 40px;
+  border-radius: 50%;
+}
+.contact-images-container {
+  display: flex;
+  column-gap: 10px;
 }

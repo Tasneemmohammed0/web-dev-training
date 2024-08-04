@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  position: relative;
 }
 
 header {
@@ -18,10 +17,7 @@ header {
 h1 {
   margin: 0;
 }
-a {
-  text-decoration: none;
-  color: white;
-}
+
 main {
   padding-left: 20px;
 }
@@ -44,6 +40,17 @@ footer {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.15s;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
 .about h2 {
   font-size: 50px;
   margin: 0;
@@ -52,7 +59,8 @@ footer {
 .projects-grid {
   display: grid;
   margin: auto 0;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
   align-items: center;
 }
 

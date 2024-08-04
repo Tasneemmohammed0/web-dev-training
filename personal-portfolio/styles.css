@@ -20,6 +20,7 @@ header {
 
 h1 {
   margin: 0;
+  margin-top: 10px;
 }
 
 main {
@@ -56,7 +57,7 @@ a:hover {
 }
 
 .about h2 {
-  font-size: 50px;
+  font-size: 40px;
   margin: 0;
   margin-top: 10px;
 }
@@ -64,7 +65,6 @@ a:hover {
 .projects-grid {
   display: grid;
   margin: auto 0;
-  /* grid-template-columns: 1fr 1fr 1fr; */
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   align-items: center;
 }
@@ -87,10 +87,12 @@ a:hover {
   align-items: center;
   column-gap: 20px;
 }
+
 .contact-images-container img {
   width: 40px;
   border-radius: 50%;
 }
+
 .contact-images-container {
   display: flex;
   column-gap: 10px;

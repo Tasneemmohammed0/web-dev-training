@@ -4,13 +4,13 @@ body {
 }
 
 header {
-  background-color: rgb(109, 210, 109);
+  background-color: rgb(102, 166, 102);
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  row-gap: 10x;
+  row-gap: 10px;
   margin: 0;
 }
 
@@ -54,13 +54,14 @@ a:hover {
 .about h2 {
   font-size: 50px;
   margin: 0;
+  margin-top: 10px;
 }
 
 .projects-grid {
   display: grid;
   margin: auto 0;
-  grid-template-columns: 1fr 1fr 1fr;
-  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   align-items: center;
 }
 
@@ -85,4 +86,22 @@ a:hover {
 .contact-images-container {
   display: flex;
   column-gap: 10px;
+}
+
+/* New rules if the window width is smaller than 480px */
+@media screen and (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .nav-links {
+    flex-direction: column;
+    row-gap: 5px;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80px;
+  }
 }

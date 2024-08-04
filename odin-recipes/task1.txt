@@ -1,4 +1,0 @@
-name: Tasneem Mohammed Ahmed
-phone number: 01121920534
-email: tasneemmohammed098@gmail.com
-github-repo: https://github.com/Tasneemmohammed0/web-dev-training

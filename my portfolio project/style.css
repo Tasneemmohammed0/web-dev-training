@@ -1,11 +1,27 @@
 * {
-  font-family: "Courier New", Courier, monospace;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(15, 37, 25);
 }
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 50px;
+}
+
+.my-name {
+  background: linear-gradient(
+    to right,
+    #84fab0,
+    #8fd3f4
+  ); /* Define the gradient */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+  background-clip: text; /* Standard property for background-clip */
+  color: transparent; /* Fallback color if background-clip is not supported */
 }
 
 .nav {
@@ -18,5 +34,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 50px;
+  column-gap: 40px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: inherit;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#About-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.personal-photo {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+  width: 300px;
 }

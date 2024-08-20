@@ -3,20 +3,24 @@
 }
 
 body {
-  background-color: rgb(15, 37, 25);
+  margin: 0;
+  background-color: #f3f3f3;
 }
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 50px;
+  box-shadow: 10px 4px 10px rgba(189, 178, 178, 0.3);
 }
 
-.my-name {
+.my-name,
+.welcome-text,
+.current-uni {
   background: linear-gradient(
     to right,
-    #84fab0,
-    #8fd3f4
+    #19b051,
+    #245771
   ); /* Define the gradient */
   -webkit-background-clip: text; /* Clip the background to the text */
   -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
@@ -35,12 +39,12 @@ body {
   justify-content: space-between;
   align-items: center;
   column-gap: 40px;
+  color: black;
 }
 
 .nav__link {
   text-decoration: none;
   color: inherit;
-  color: white;
 }
 
 ul {
@@ -51,11 +55,66 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  column-gap: 40px;
   height: 100vh;
+  position: relative;
 }
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 10px;
+  text-align: center;
+  width: 500px;
+}
+
+.welcome-text {
+  font-size: 50px;
+  text-align: center;
+  margin: 0;
+}
+
 .personal-photo {
   border-radius: 50%;
   max-width: 100%;
   height: auto;
   width: 300px;
 }
+
+/* 
+ .dynamic-info {
+  white-space: nowrap;
+  overflow: hidden; 
+  width: 0; 
+  animation: slide 4s steps(10) infinite;
+}
+
+.dynamic-info li {
+  list-style: none;
+  position: relative;
+  top: 0;
+}
+
+.dynamic-info li span::after {
+  position: absolute;
+  left: 0;
+  content: "";
+}
+
+@keyframes slide {
+  100% {
+    top: -360;
+  }
+}
+*/
+
+/* @keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+} */

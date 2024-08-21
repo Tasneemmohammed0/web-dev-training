@@ -12,11 +12,13 @@ body {
   align-items: center;
   height: 50px;
   box-shadow: 10px 4px 10px rgba(189, 178, 178, 0.3);
+  padding: 10px;
 }
 
 .my-name,
 .welcome-text,
-.current-uni {
+.current-uni,
+.contacts h3 {
   background: linear-gradient(
     to right,
     #19b051,
@@ -53,33 +55,54 @@ ul {
 
 #About-me {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  column-gap: 40px;
+  flex-direction: row;
+  column-gap: 50px;
   height: 100vh;
-  position: relative;
+  padding: 10px;
 }
 
 .personal-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
   text-align: center;
-  width: 500px;
+  width: 800px;
 }
 
 .welcome-text {
-  font-size: 50px;
-  text-align: center;
+  font-size: 80px;
   margin: 0;
+  /* margin-bottom: 10px; */
 }
 
+.description {
+  font-size: 17px;
+}
 .personal-photo {
   border-radius: 50%;
   max-width: 100%;
   height: auto;
-  width: 300px;
+  width: 400px;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: 160px repeat(4, 40px);
+  justify-items: center;
+  column-gap: 5px;
+}
+
+.contacts img {
+  width: 40px;
+  border-radius: 50%;
+}
+.contacts h3 {
+  margin: auto;
+  /* grid-column: 1; */
 }
 
 /* 

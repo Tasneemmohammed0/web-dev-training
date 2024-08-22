@@ -25,7 +25,8 @@ body {
 .welcome-text,
 .current-uni,
 .contacts h3,
-#skills h1 {
+#skills h1,
+#projects h1 {
   background: linear-gradient(
     to right,
     #19b051,
@@ -115,7 +116,6 @@ ul {
   text-align: center;
   font-size: 50px;
 }
-
 .skill-set {
   display: grid;
   grid-template-columns: repeat(6, 80px);
@@ -145,6 +145,33 @@ ul {
 
 .skill-icon:hover {
   transform: scale(1.2);
+}
+
+/* PROJECTS */
+#projects h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 120px;
+}
+
+.projects-container img {
+  width: 400px;
+  height: 300px;
+}
+
+.project {
+  display: grid;
+  grid-template-rows: 340px 32px 48px 20px;
+  width: 420px;
+  height: 450px;
+  background-color: green;
+  align-items: center;
+  justify-content: center;
 }
 
 /* 

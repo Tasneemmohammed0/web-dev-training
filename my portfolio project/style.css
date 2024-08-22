@@ -26,7 +26,9 @@ body {
 .current-uni,
 .contacts h3,
 #skills h1,
-#projects h1 {
+#projects h1,
+.prject-name,
+.font-semibold {
   background: linear-gradient(
     to right,
     #19b051,
@@ -156,24 +158,47 @@ ul {
 .projects-container {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  gap: 120px;
+  gap: 80px;
+  margin-left: 20px;
 }
 
 .projects-container img {
+  border-radius: 20px;
   width: 400px;
   height: 300px;
+  box-shadow: 2px 2px 5px 2px #716c6c;
 }
 
 .project {
   display: grid;
   grid-template-rows: 340px 32px 48px 20px;
-  width: 420px;
-  height: 450px;
-  background-color: green;
   align-items: center;
   justify-content: center;
+
+  border-radius: 20px;
+
+  width: 420px;
+  height: 450px;
+  background-color: #d8d8d8;
+  box-shadow: 2px 2px 5px 2px #309154;
+
+  /*transition*/
+  transition: transform 0.2s ease;
+}
+.project:hover {
+  transform: scale(1.1);
 }
 
+.project-description {
+  color: #595656;
+}
+.font-semibold {
+  font-weight: 600;
+}
+
+.languages-text {
+  color: #595656;
+}
 /* 
  .dynamic-info {
   white-space: nowrap;

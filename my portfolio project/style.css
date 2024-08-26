@@ -17,7 +17,7 @@ a {
 .header {
   background-color: #f3f3f3;
   top: 0;
-  position: sticky;
+  /* position: sticky; */
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -27,6 +27,9 @@ a {
   padding: 10px;
 }
 
+#sticky {
+  position: sticky;
+}
 .my-name,
 .welcome-text,
 .current-uni,
@@ -123,6 +126,8 @@ ul {
 #skills {
   border: 5px solid;
   border-image: linear-gradient(to right, #19b051, #245771) 1;
+  width: 800px;
+  margin: 0 auto;
   padding: 30px;
   margin-top: 100px;
 }

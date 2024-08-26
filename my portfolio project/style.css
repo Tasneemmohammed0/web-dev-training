@@ -81,11 +81,6 @@ a {
 
 .menu-icon {
   display: none;
-  /* cursor: pointer;
-  width: 30px;
-  height: 30px;
-  margin-right: 30px;
-  margin-top: 5px; */
 }
 
 ul {
@@ -246,16 +241,8 @@ ul {
 }
 
 /* New rules if the window width is smaller than 480px */
+/*HEADER*/
 @media screen and (max-width: 768px) {
-  /* .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-  .nav-links {
-    flex-direction: column;
-    row-gap: 5px;
-  } */
-
   .header {
     position: relative;
   }
@@ -283,5 +270,57 @@ ul {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+  }
+}
+
+/*About page*/
+@media screen and (max-width: 950px) {
+  #About-me {
+    flex-direction: column;
+  }
+
+  .personal-photo {
+    height: 50%;
+    width: 300px;
+  }
+
+  .personal-info {
+    row-gap: 5px;
+    width: 400px;
+  }
+
+  .welcome-text {
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .contacts img {
+    width: 35px;
+  }
+}
+
+/*Projects page*/
+@media screen and (max-width: 950px) {
+  .projects-container {
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+
+/*skill set*/
+@media screen and (max-width: 890px) {
+  #skills {
+    width: 400px;
+  }
+
+  #skills h1 {
+    font-size: 50px;
+  }
+  .skill-set {
+    grid-template-columns: repeat(3, 80px);
+  }
+
+  .skill-set img {
+    width: 50px;
   }
 }

@@ -8,29 +8,19 @@ html {
 body {
   margin: 0;
   background-color: #f3f3f3;
-  margin-bottom: 1000px;
+  margin-bottom: 200px;
 }
 a {
   text-decoration: none;
 }
 
-.header {
-  background-color: #f3f3f3;
-  top: 0;
-  /* position: sticky; */
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 50px;
-  box-shadow: 10px 4px 10px rgba(189, 178, 178, 0.3);
-  padding: 10px;
+.section {
+  padding: 50px;
+  border-top: 1px solid #ddd;
 }
 
-#sticky {
-  position: sticky;
-}
 .my-name,
+.nav__link:hover,
 .welcome-text,
 .current-uni,
 .contacts h3,
@@ -49,15 +39,36 @@ a {
   color: transparent; /* Fallback color if background-clip is not supported */
 }
 
-.nav {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
+  height: 50px;
+  width: 100%;
+  background-color: #f3f3f3;
+  box-shadow: 10px 4px 10px rgba(189, 178, 178, 0.3);
+  padding: 10px;
+  position: fixed;
+  top: 0;
+
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.header.sticky {
+  transform: translateY(0);
+}
+
+.nav {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 20px;
 }
 
 .nav__links {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   column-gap: 40px;
   color: black;
@@ -95,7 +106,6 @@ ul {
 .welcome-text {
   font-size: 80px;
   margin: 0;
-  /* margin-bottom: 10px; */
 }
 
 .description {
@@ -220,39 +230,3 @@ ul {
 .languages-text {
   color: #595656;
 }
-/* 
- .dynamic-info {
-  white-space: nowrap;
-  overflow: hidden; 
-  width: 0; 
-  animation: slide 4s steps(10) infinite;
-}
-
-.dynamic-info li {
-  list-style: none;
-  position: relative;
-  top: 0;
-}
-
-.dynamic-info li span::after {
-  position: absolute;
-  left: 0;
-  content: "";
-}
-
-@keyframes slide {
-  100% {
-    top: -360;
-  }
-}
-*/
-
-/* @keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: black;
-  }
-} */

@@ -1,18 +1,13 @@
 "use strict";
 
 const header = document.querySelector(".header");
-const nav = document.querySelector(".nav");
+let lastScrollY = window.scrollY;
 
-const stickyNav = function (entries) {
-  const [entry] = entries;
-
-  if (!entry.isIntersecting) nav.classList.add("sticky");
-  else nav.classList.remove("sticky");
-};
-let options = {
-  root: null,
-  rootMargin: "0px",
-  threshold: 1.0,
-};
-
-let observer = new IntersectionObserver(callback, options);
+window.addEventListener("scroll", () => {
+  if (window.scrollY < lastScrollY) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+  lastScrollY = window.scrollY;
+});

@@ -187,50 +187,70 @@ ul {
   font-size: 50px;
 }
 
+/* Container for projects */
 .projects-container {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  row-gap: 40px;
+
   gap: 40px;
+  padding: 20px;
 }
 
+/* Styling for project images */
 .projects-container img {
   border-radius: 20px;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   height: 280px;
+  object-fit: cover; /* Ensures image fits well */
   box-shadow: 2px 2px 5px 2px #716c6c;
+  transition: box-shadow 0.3s ease;
 }
 
+.projects-container img:hover {
+  box-shadow: 4px 4px 10px 4px #716c6c;
+}
+
+/* Individual project card */
 .project {
   display: grid;
   grid-template-rows: 340px 32px 48px 20px;
   align-items: center;
   align-content: center;
-
   padding: 10px;
   border-radius: 20px;
-
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   height: 450px;
   background-color: #d8d8d8;
   box-shadow: 2px 2px 5px 2px #309154;
-  /*transition*/
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover effect for project card */
 .project:hover {
   transform: translateY(-20px);
+  box-shadow: 4px 4px 10px 4px #309154;
 }
+
+/* Project description styling */
 .project-description {
   color: #595656;
+  font-size: 16px;
+  padding: 0 10px;
 }
+
+/* Font weight class */
 .font-semibold {
   font-weight: 600;
 }
 
+/* Text styling for languages or tags */
 .languages-text {
   color: #595656;
+  font-size: 14px;
+  text-align: center;
 }
 
 /* New rules if the window width is smaller than 480px */

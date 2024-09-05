@@ -191,18 +191,17 @@ ul {
 .projects-container {
   display: grid;
   justify-content: center;
-  /* justify-items: center; */
   /* align-items: center; */
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 40px;
   gap: 40px;
-  margin: auto 0;
   /* margin-left: 20px; */
 }
 
 .projects-container img {
   border-radius: 20px;
-  width: 400px;
-  height: 300px;
+  width: 350px;
+  height: 280px;
   box-shadow: 2px 2px 5px 2px #716c6c;
 }
 
@@ -217,7 +216,7 @@ ul {
 
   border-radius: 20px;
 
-  width: 420px;
+  width: 350px;
   height: 450px;
   background-color: #d8d8d8;
   box-shadow: 2px 2px 5px 2px #309154;
@@ -303,7 +302,7 @@ ul {
 @media screen and (max-width: 950px) {
   .projects-container {
     justify-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
 }
 

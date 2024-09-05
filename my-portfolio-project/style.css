@@ -168,7 +168,6 @@ ul {
   display: grid;
   align-items: center;
   justify-content: center;
-  /* background-color: gray; */
   box-shadow: 2px 2px 5px 2px #309154; /* X-offset, Y-offset, blur-radius, color */
   border-radius: 10px;
 
@@ -191,11 +190,9 @@ ul {
 .projects-container {
   display: grid;
   justify-content: center;
-  /* align-items: center; */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   row-gap: 40px;
   gap: 40px;
-  /* margin-left: 20px; */
 }
 
 .projects-container img {
@@ -206,14 +203,12 @@ ul {
 }
 
 .project {
-  /* place-self: center; */
-
   display: grid;
   grid-template-rows: 340px 32px 48px 20px;
   align-items: center;
-  padding: 10px;
   align-content: center;
 
+  padding: 10px;
   border-radius: 20px;
 
   width: 350px;
@@ -222,7 +217,6 @@ ul {
   box-shadow: 2px 2px 5px 2px #309154;
   /*transition*/
   transition: transform 0.2s ease;
-  /* padding: 5px; */
 }
 
 .project:hover {
